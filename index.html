@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/slider/bike1.png" type="image/x-icon">
+  <title>Biker-Zone</title>
+  <!-- DaisyUI+tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google-fonts-Poppins cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .poppins {
+      font-family: "Poppins", serif
+    }
+  </style>
+  <!-- tailwind customized -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            branding: '#E76F51',
+            bg: 'rgba(231, 111, 81, 0.1)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="poppins ">
+  <!-- header section -->
+  <header class="max-w-7xl mx-auto pt-6">
+    <!-- navbar -->
+    <nav>
+      <div class="navbar ">
+        <div class="flex-1 ">
+          <div class="dropdown  ">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-branding" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-branding text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li>
+                <a>Shop</a>
+              </li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class=" font-bold  text-xl">Bike Dekho</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="hover:bg-white">Home</a></li>
+            <li>
+              <a class="hover:bg-white">Shop</a>
+            </li>
+            <li><a class="hover:bg-white">News</a></li>
+            <li><a class="hover:bg-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn px-8 rounded-md bg-branding text-white hover:bg-black">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <section class="pt-5 lg:px-2">
+      <div class="carousel bg-bg lg:rounded-md">
+        <!-- slider-one -->
+        <div id="slide1" class="carousel-item  relative w-full">
+          <div class="justify-center items-center md:flex lg:flex">
+            <!-- content -->
+            <div class="flex-1 space-y-6 md:space-y-16 lg:space-y-16 px-5  md:p-24  lg:p-24 lg:block">
+              <h1 class="text-3xl mt-6  md:text-6xl lg:text-6xl font-bold leading-tight text-[#000000]">Ride-on R15 V4
+                with Smile</h1>
+              <p>The Yamaha R15 is a stylish and high-performance sports bike known for its sleek design, advanced
+                features, and powerful
+                engine. It is popular among biking enthusiasts for its speed and agility.</p>
+              <a class="btn px-8 rounded-md  bg-branding text-white hover:bg-black ">Purchase</a>
+            </div>
+            <!-- img -->
+            <div class="flex-1">
+              <img src="images/slider/bike1.png" class=" w-[100%] md:w-[400px] lg:w-[400px]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- main section -->
+  <main class="max-w-7xl mx-auto ">
+    <!-- feature bike section -->
+    <section>
+      <div class="text-center space-y-3 pt-32">
+        <h1 class="text-[#000000] text-4xl font-bold">Fetured Bikes In This Year</h1>
+        <h3 class="text-branding font-bold">Best Bike Collection</h3>
+      </div>
+      <div class="grid justify-center items-center lg:grid-cols-3 pt-8">
+        <div> <img src="images/slider/bike2.png" alt=""></div>
+        <div> <img src="images/slider/bike2.png" alt=""></div>
+        <div> <img src="images/slider/bike2.png" alt=""></div>
+      </div>
+    </section>
+    <!-- latest news section -->
+    <section>
+      <div class="text-center space-y-3 pt-32">
+        <h1 class="text-[#000000] text-4xl font-bold">Latest News</h1>
+      </div>
+      <!-- card-box -->
+      <div class="grid gap-5 justify-center items-center  lg:grid-cols-3 pt-8">
+        <!-- card -->
+        <div class="space-y-4 drop-shadow-md border rounded-lg p-5 bg-white drop-shadow">
+          <div>
+            <img class="w-full mx-auto" src="images/others/latest2.png" alt="">
+          </div>
+          <div class="space-y-3">
+            <h1 class="text-[#000000] text-xl font-bold">Ducati XDIAVEL S-73</h1>
+            <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+              faucibus sed id nisi lectus at.</p>
+            <button class="btn px-8 rounded-md bg-branding text-white hover:bg-black">Read More</button>
+          </div>
+        </div>
+        <div class="space-y-4 drop-shadow-md border rounded-lg p-5 bg-white drop-shadow">
+          <div>
+            <img class="w-full mx-auto" src="images/others/latest3.png" alt="">
+          </div>
+          <div class="space-y-3">
+            <h1 class="text-[#000000] text-xl font-bold">2021 Honda CBR500R</h1>
+            <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+              faucibus sed id nisi lectus at.</p>
+            <button class="btn px-8 rounded-md bg-branding text-white hover:bg-black">Read More</button>
+          </div>
+        </div>
+        <div class="space-y-4 drop-shadow-md border rounded-lg p-5 bg-white drop-shadow">
+          <div>
+            <img class="w-full mx-auto" src="images/others/latest1.png" alt="">
+          </div>
+          <div class="space-y-3">
+            <h1 class="text-[#000000] text-xl font-bold">Motorcycles & Scooters</h1>
+            <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+              faucibus sed id nisi lectus at.</p>
+            <button class="btn px-8 rounded-md bg-branding text-white hover:bg-black">Read More</button>
+          </div>
+        </div>
+
+        <!-- Happy clients section -->
+
+        <section>
+
+          <div class="text-center space-y-3 pt-32">
+            <h1 class="text-[#000000] text-center text-4xl font-bold">Happy <span class="text-branding ">Clients
+                says</span></h1>
+          </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+  </main>
+  <!-- footer section -->
+  <footer></footer>
+</body>
+
+</html>
